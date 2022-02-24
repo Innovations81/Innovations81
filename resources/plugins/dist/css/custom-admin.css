@@ -1,0 +1,133 @@
+.layout-navbar-fixed .wrapper .main-header
+{
+	z-index: 9;
+}
+
+.dark-mode .close, .dark-mode .mailbox-attachment-close
+{
+	color: #fff;
+}
+
+.document-verify-form .card .card-img-top
+{
+    height: 100px;
+    object-fit: contain;
+}
+#documentVeirfy .modal-dialog
+{
+    max-width: 700px;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.danger{
+  color:#FF422E ;
+}
+
+.success{
+  color:#28a745 ;
+}
+
+.doc-verify-body
+{
+  padding-left: 10px;
+  padding-right: 10px; 
+}
+.mod-radio
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+.mod-radio .icheck-success
+{
+  display: inline-flex !important;
+  width: 50%;
+}
+.mod-radio .icheck-danger
+{
+  display: inline-flex !important;
+  width: 50%;
+}
+.mod-radio .icheck-success label{
+
+  font-size: 13px;
+  padding-right: 10px;
+}
+.mod-radio .icheck-danger label{
+
+  font-size: 13px;
+  padding-right: 10px;
+}
+
+.account-subblock select option{
+  background : #0D1F39;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #343a40 !important;
+    border-radius: 4px;
+    border-color: #6c757d;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered
+{
+      color: #fff !important;
+}
+.select2-container .select2-selection--single .select2-selection__rendered
+{
+  padding-left: 15px !important;
+}
+.select2-dropdown
+{
+  color: #fff  !important;
+  background-color: #343a40 !important;
+  border: 1px solid #223044 !important;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #223044 !important;
+  background: #343a40;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+.select2-results__option
+{
+  font-size: 14px;
+  font-weight: 400;
+}
+.select2-container--default .select2-results__option--selected {
+  background-color: #77a5ed !important;
+  color: #fff;
+}
+
+.select2-container .select2-selection--single {
+  height: 37px !important;
+}
+.pagination-top-margin-top {
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex{
+  margin-top: 0px;
+}
+
+.pagination-main{
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.searchdata-mt{
+  margin-top: 33px;
+}

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Goa 247</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/responsive.dataTables.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Main Wrapper -->
+    <section class="main-wrapper">
+        <div class="sidebar">
+            <div class="logo-block">
+                <a class="navbar-logo" href="index.html">
+                    <img src="assets/images/logo.svg" class="img-fluid" />
+                    <span>Your Business tagline goes here</span>
+                </a>
+                <a href="javascript:void(0);" class="navbar-toggle">
+                    <img src="assets/images/hamburger.png" class="img-fluid" />
+                </a>
+            </div>
+            <div class="menu-block">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="assets/images/icon1.png" class="img-fluid default" />
+                            <img src="assets/images/icon1-active.png" class="img-fluid active" />
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="active">
+                            <img src="assets/images/icon1.png" class="img-fluid default" />
+                            <img src="assets/images/icon1-active.png" class="img-fluid active" />
+                            <span>Tasks</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="assets/images/icon2.png" class="img-fluid default" />
+                            <img src="assets/images/icon2-active.png" class="img-fluid active" />
+                            <span>Agents</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="assets/images/icon3.png" class="img-fluid default" />
+                            <img src="assets/images/icon3-active.png" class="img-fluid active" />
+                            <span>Players</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="assets/images/icon4.png" class="img-fluid default" />
+                            <img src="assets/images/icon4-active.png" class="img-fluid active" />
+                            <span>Statistics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="assets/images/icon5.png" class="img-fluid default" />
+                            <img src="assets/images/icon5-active.png" class="img-fluid active" />
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="assets/images/icon6.png" class="img-fluid default" />
+                            <img src="assets/images/icon6-active.png" class="img-fluid active" />
+                            <span>Support</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-bottom-block">
+                <ul class="bottom-block">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="assets/images/logout.svg" class="img-fluid default" />
+                            <img src="assets/images/logout-active.svg" class="img-fluid active" />
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content-block">
+            <div class="heading-block">
+                <div class="row">
+                    <div class="col-6 left-column">
+                        <div class="heading-left-block">
+                            <h2>Sales</h2>
+                            <ul class="breadcrumbs">
+                                <li><a href="https://goa247.com/">Goa247</a></li>
+                                <li>Players</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 right-column">
+                        <div class="heading-right-block">
+                            <div class="heading-info">
+                                <h5>John Doe</h5>
+                                <h6>Admin</h6>
+                            </div>
+                            <div class="heading-profile">
+                                <img src="assets/images/profile.png" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-block om-agents-tab-block">
+                <div class="tab-top-block">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="https://goa247.live/rjg$$" />
+                                <i class="fa fa-clone" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="button-block form-group">
+                                <a href="javascript:void(0);" class="btn-green" data-toggle="modal"
+                                    data-target="#createNewModal">Create New Player</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search agent" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Registered between" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Today" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="button-block">
+                                <a href="javascript:void(0);" class="btn-red">Search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-bottom-block">
+                    <div class="filter-block">
+                        <div class="row">
+                            <div class="col-6 left-column">
+                                <h2>Associates list</h2>
+                            </div>
+                            <div class="col-6 right-column">
+                                <a href="javascript:void(0);" class="filter" data-toggle="modal"
+                                    data-target="#filterModal">
+                                    <img src="assets/images/filter.png" class="img-fluid" />
+                                    <span>Filter</span>
+                                </a>
+                                <div class="search-block">
+                                    <input type="text" class="input-search" />
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="om-agents table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Associate Name</th>
+                                <th>Created at</th>
+                                <th>No. of Players</th>
+                                <th>Deposits</th>
+                                <th>Withdraws</th>
+                                <th>GRR</th>
+                                <th>Tasks</th>
+                                <th>Backlogs</th>
+                                <th>Manager</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Raj Shankar</td>
+                                <td>22/01/22, 12:24 PM</td>
+                                <td>012</td>
+                                <td>10,000 INR</td>
+                                <td>5000 INR</td>
+                                <td>5000 INR</td>
+                                <td>500</td>
+                                <td>20,000 INR</td>
+                                <td>Rajath</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle action" type="button" id="dropdownMenuButton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="assets/images/dots.png" class="img-fluid" />
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item active" href="javascript:void(0);">View Profile</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Block</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Change Password</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Raj Shankar</td>
+                                <td>22/01/22, 12:24 PM</td>
+                                <td>012</td>
+                                <td>10,000 INR</td>
+                                <td>5000 INR</td>
+                                <td>5000 INR</td>
+                                <td>500</td>
+                                <td>20,000 INR</td>
+                                <td>Rajath</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle action" type="button" id="dropdownMenuButton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="assets/images/dots.png" class="img-fluid" />
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item active" href="javascript:void(0);">View Profile</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Block</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Change Password</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Raj Shankar</td>
+                                <td>22/01/22, 12:24 PM</td>
+                                <td>012</td>
+                                <td>10,000 INR</td>
+                                <td>5000 INR</td>
+                                <td>5000 INR</td>
+                                <td>500</td>
+                                <td>20,000 INR</td>
+                                <td>Rajath</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle action" type="button" id="dropdownMenuButton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="assets/images/dots.png" class="img-fluid" />
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item active" href="javascript:void(0);">View Profile</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Block</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Change Password</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Raj Shankar</td>
+                                <td>22/01/22, 12:24 PM</td>
+                                <td>012</td>
+                                <td>10,000 INR</td>
+                                <td>5000 INR</td>
+                                <td>5000 INR</td>
+                                <td>500</td>
+                                <td>20,000 INR</td>
+                                <td>Rajath</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle action" type="button" id="dropdownMenuButton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="assets/images/dots.png" class="img-fluid" />
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item active" href="javascript:void(0);">View Profile</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Block</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Change Password</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Raj Shankar</td>
+                                <td>22/01/22, 12:24 PM</td>
+                                <td>012</td>
+                                <td>10,000 INR</td>
+                                <td>5000 INR</td>
+                                <td>5000 INR</td>
+                                <td>500</td>
+                                <td>20,000 INR</td>
+                                <td>Rajath</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle action" type="button" id="dropdownMenuButton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="assets/images/dots.png" class="img-fluid" />
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item active" href="javascript:void(0);">View Profile</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Block</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Change Password</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Raj Shankar</td>
+                                <td>22/01/22, 12:24 PM</td>
+                                <td>012</td>
+                                <td>10,000 INR</td>
+                                <td>5000 INR</td>
+                                <td>5000 INR</td>
+                                <td>500</td>
+                                <td>20,000 INR</td>
+                                <td>Rajath</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle action" type="button" id="dropdownMenuButton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="assets/images/dots.png" class="img-fluid" />
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item active" href="javascript:void(0);">View Profile</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Block</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Change Password</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Raj Shankar</td>
+                                <td>22/01/22, 12:24 PM</td>
+                                <td>012</td>
+                                <td>10,000 INR</td>
+                                <td>5000 INR</td>
+                                <td>5000 INR</td>
+                                <td>500</td>
+                                <td>20,000 INR</td>
+                                <td>Rajath</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle action" type="button" id="dropdownMenuButton"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="assets/images/dots.png" class="img-fluid" />
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item active" href="javascript:void(0);">View Profile</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Block</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Change Password</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </section>
+    <!-- Main Wrapper -->
+
+    <div class="modal fade filter-modal custom-filter-modal" id="filterModal" tabindex="-1" role="dialog"
+        aria-labelledby="filterModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="filterModalLabel">Filter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="assets/images/close.png" class="img-fluid" />
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <h4 class="custom-heading">Filter by Status</h4>
+                        <div class="form-group select-group">
+                            <div class="select-wrapper">
+                                <select class="form-control">
+                                    <option>VIP</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group radio-group fullwidth-radio-group">
+                            <label class="radio-label">Filter by Balance
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="input-group custom-input-group">
+                                <div class="input-subgroup">
+                                    <label>Min amount</label>
+                                    <input type="number" class="form-control" placeholder="00" />
+                                </div>
+                                <div class="input-subgroup">
+                                    <label>Max amount</label>
+                                    <input type="number" class="form-control" placeholder="2000" />
+                                </div>
+                            </div>
+                            <label class="radio-label">Filter by Last Login
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="input-group fullwidth-input-group">
+                                <div class="input-subgroup">
+                                    <label>Date</label>
+                                    <div class="form-group datepicker-group">
+                                        <input type="text" class="form-control modal-datepicker"
+                                            placeholder="Date Range" name="date" readonly>
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group button-group">
+                            <button type="reset" class="btn-border-blue">Clear All</button>
+                            <button type="submit" class="btn-green">Apply Filter</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade filter-modal custom-filter-modal" id="createNewModal" tabindex="-1" role="dialog"
+        aria-labelledby="filterModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createNewModalLabel">Create New Player</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="assets/images/close.png" class="img-fluid" />
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <input type="text" class="form-control" placeholder="00" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input type="text" class="form-control" placeholder="2000" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="input-group fullwidth-input-group">
+                                    <div class="input-subgroup">
+                                        <label>Username</label>
+                                        <div class="form-group datepicker-group">
+                                            <input type="text" class="form-control modal-datepicker" placeholder="00"
+                                                name="date" readonly>
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="input-group fullwidth-input-group">
+                                    <div class="input-subgroup">
+                                        <label>Mobile Number</label>
+                                        <div class="form-group datepicker-group">
+                                            <input type="text" class="form-control modal-datepicker" placeholder="00"
+                                                name="date" readonly>
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn-green">Create Player</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/dataTables.responsive.min.js"></script>
+    <script src="assets/js/responsive.bootstrap4.min.js"></script>
+    <script src="assets/js/dataTables.buttons.min.js"></script>
+    <script src="assets/js/jszip.min.js"></script>
+    <script src="assets/js/pdfmake.min.js"></script>
+    <script src="assets/js/vfs_fonts.js"></script>
+    <script src="assets/js/buttons.html5.min.js"></script>
+    <script src="assets/js/buttons.print.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Goa 247</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/responsive.dataTables.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Main Wrapper -->
+    <section class="main-wrapper">
+        <div class="sidebar">
+            <div class="logo-block">
+                <a class="navbar-logo" href="index.html">
+                    <img src="assets/images/logo.svg" class="img-fluid" />
+                    <span>Your Business tagline goes here</span>
+                </a>
+                <a href="javascript:void(0);" class="navbar-toggle">
+                    <img src="assets/images/hamburger.png" class="img-fluid" />
+                </a>
+            </div>
+            <div class="menu-block">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);" class="active">
+                            <img src="assets/images/icon1.png" class="img-fluid default" />
+                            <img src="assets/images/icon1-active.png" class="img-fluid active" />
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="assets/images/icon2.png" class="img-fluid default" />
+                            <img src="assets/images/icon2-active.png" class="img-fluid active" />
+                            <span>Agents</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="assets/images/icon3.png" class="img-fluid default" />
+                            <img src="assets/images/icon3-active.png" class="img-fluid active" />
+                            <span>Players</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="assets/images/icon4.png" class="img-fluid default" />
+                            <img src="assets/images/icon4-active.png" class="img-fluid active" />
+                            <span>Statistics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="assets/images/icon5.png" class="img-fluid default" />
+                            <img src="assets/images/icon5-active.png" class="img-fluid active" />
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="assets/images/icon6.png" class="img-fluid default" />
+                            <img src="assets/images/icon6-active.png" class="img-fluid active" />
+                            <span>Support</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-bottom-block">
+                <ul class="bottom-block">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <img src="assets/images/logout.svg" class="img-fluid default" />
+                            <img src="assets/images/logout-active.svg" class="img-fluid active" />
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content-block">
+            <div class="heading-block">
+                <div class="row">
+                    <div class="col-6 left-column">
+                        <div class="heading-left-block">
+                            <h2>Agents</h2>
+                            <ul class="breadcrumbs">
+                                <li><a href="https://goa247.com/">Goa247</a></li>
+                                <li>Agents</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 right-column">
+                        <div class="heading-right-block">
+                            <div class="heading-info">
+                                <h5>John Doe</h5>
+                                <h6>Admin</h6>
+                            </div>
+                            <div class="heading-profile">
+                                <img src="assets/images/profile.png" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-wrapper">
+                <div class="tab-block">
+                    <div class="tab-top-block fm-tab-top-block">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4-5 col-lg-1-5">
+                                <div class="tab-details">
+                                    <div class="custom-image-block">
+                                        <img src="assets/images/fm-icon1.svg" class="img-fluid" />
+                                    </div>
+                                    <div class="detail-block">
+                                        <h2>225</h2>
+                                        <h5>Withdraw Requests</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-5-5 col-lg-1-5">
+                                <div class="tab-details">
+                                    <div class="custom-image-block">
+                                        <img src="assets/images/fm-icon2.svg" class="img-fluid" />
+                                    </div>
+                                    <div class="detail-block">
+                                        <h2>225</h2>
+                                        <h5>Pending Withdraw Requests</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3-5 col-lg-1-5">
+                                <div class="tab-details">
+                                    <div class="custom-image-block">
+                                        <img src="assets/images/fm-icon3.svg" class="img-fluid" />
+                                    </div>
+                                    <div class="detail-block">
+                                        <h2>225</h2>
+                                        <h5>Withdraw Requests on Hold</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-2-5 col-lg-1-5">
+                                <div class="tab-details">
+                                    <div class="custom-image-block">
+                                        <img src="assets/images/fm-icon4.svg" class="img-fluid" />
+                                    </div>
+                                    <div class="detail-block">
+                                        <h2>225</h2>
+                                        <h5>Withdraw Requests Approved</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4-5 col-lg-1-5">
+                                <div class="tab-details">
+                                    <div class="custom-image-block">
+                                        <img src="assets/images/fm-icon5.svg" class="img-fluid" />
+                                    </div>
+                                    <div class="detail-block">
+                                        <h2>225</h2>
+                                        <h5>Withdraw Requests Rejected</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-bottom-block">
+                        <div class="tab-table-block fm-withdraw-requests-block">
+                            <div class="filter-block">
+                                <div class="row">
+                                    <div class="col-6 left-column">
+                                        <h2>Withdraw Request</h2>
+                                    </div>
+                                    <div class="col-6 right-column">
+                                        <a href="javascript:void(0);" class="filter" data-toggle="modal"
+                                            data-target="#filterModal">
+                                            <img src="assets/images/filter.png" class="img-fluid" />
+                                            <span>Filter</span>
+                                        </a>
+                                        <div class="search-block">
+                                            <input type="text" class="input-search" />
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="fm-withdraw-requests table table-striped table-bordered dt-responsive nowrap"
+                                style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>User ID</th>
+                                        <th>Stage</th>
+                                        <th>Risk percentage</th>
+                                        <th>Amount</th>
+                                        <th>Withdraw Bank Details</th>
+                                        <th>Active Bal.</th>
+                                        <th>Waiting time</th>
+                                        <th>Assigned Agent</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>029239</td>
+                                        <td>Happy</td>
+                                        <td>02%</td>
+                                        <td>Main Wallet</td>
+                                        <td>20,000 INR <a href="javascript:void(0);" class="view-history">View
+                                                history</a></td>
+                                        <td>30,000 INR</td>
+                                        <td>10 mins</td>
+                                        <td>Ram Shankar</td>
+                                        <td class="button-column">
+                                            <a href="javascript:void(0);" class="btn-green" data-toggle="modal"
+                                    data-target="#approveModal">Approved</a>
+                                            <a href="javascript:void(0);" class="btn-red" data-toggle="modal" data-target="#rejectModal">Reject</a>
+                                            <a href="javascript:void(0);" class="btn-queen-blue">Hold</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>029239</td>
+                                        <td>Happy</td>
+                                        <td>02%</td>
+                                        <td>Main Wallet</td>
+                                        <td>20,000 INR <a href="javascript:void(0);" class="view-history">View
+                                                history</a></td>
+                                        <td>30,000 INR</td>
+                                        <td>10 mins</td>
+                                        <td>Ram Shankar</td>
+                                        <td class="button-column">
+                                            <a href="javascript:void(0);" class="btn-green" data-toggle="modal"
+                                    data-target="#approveModal">Approved</a>
+                                            <a href="javascript:void(0);" class="btn-red" data-toggle="modal" data-target="#rejectModal">Reject</a>
+                                            <a href="javascript:void(0);" class="btn-queen-blue">Hold</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>029239</td>
+                                        <td>Happy</td>
+                                        <td>02%</td>
+                                        <td>Main Wallet</td>
+                                        <td>20,000 INR <a href="javascript:void(0);" class="view-history">View
+                                                history</a></td>
+                                        <td>30,000 INR</td>
+                                        <td>10 mins</td>
+                                        <td>Ram Shankar</td>
+                                        <td class="button-column">
+                                            <a href="javascript:void(0);" class="btn-green" data-toggle="modal"
+                                    data-target="#approveModal">Approved</a>
+                                            <a href="javascript:void(0);" class="btn-red" data-toggle="modal" data-target="#rejectModal">Reject</a>
+                                            <a href="javascript:void(0);" class="btn-queen-blue">Hold</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>029239</td>
+                                        <td>Happy</td>
+                                        <td>02%</td>
+                                        <td>Main Wallet</td>
+                                        <td>20,000 INR <a href="javascript:void(0);" class="view-history">View
+                                                history</a></td>
+                                        <td>30,000 INR</td>
+                                        <td>10 mins</td>
+                                        <td>Ram Shankar</td>
+                                        <td class="button-column">
+                                            <a href="javascript:void(0);" class="btn-green" data-toggle="modal"
+                                    data-target="#approveModal">Approved</a>
+                                            <a href="javascript:void(0);" class="btn-red" data-toggle="modal" data-target="#rejectModal">Reject</a>
+                                            <a href="javascript:void(0);" class="btn-queen-blue">Hold</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>029239</td>
+                                        <td>Happy</td>
+                                        <td>02%</td>
+                                        <td>Main Wallet</td>
+                                        <td>20,000 INR <a href="javascript:void(0);" class="view-history">View
+                                                history</a></td>
+                                        <td>30,000 INR</td>
+                                        <td>10 mins</td>
+                                        <td>Ram Shankar</td>
+                                        <td class="button-column">
+                                            <a href="javascript:void(0);" class="btn-green" data-toggle="modal"
+                                    data-target="#approveModal">Approved</a>
+                                            <a href="javascript:void(0);" class="btn-red" data-toggle="modal" data-target="#rejectModal">Reject</a>
+                                            <a href="javascript:void(0);" class="btn-queen-blue">Hold</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>029239</td>
+                                        <td>Happy</td>
+                                        <td>02%</td>
+                                        <td>Main Wallet</td>
+                                        <td>20,000 INR <a href="javascript:void(0);" class="view-history">View
+                                                history</a></td>
+                                        <td>30,000 INR</td>
+                                        <td>10 mins</td>
+                                        <td>Ram Shankar</td>
+                                        <td class="button-column">
+                                            <a href="javascript:void(0);" class="btn-green" data-toggle="modal"
+                                    data-target="#approveModal">Approved</a>
+                                            <a href="javascript:void(0);" class="btn-red" data-toggle="modal" data-target="#rejectModal">Reject</a>
+                                            <a href="javascript:void(0);" class="btn-queen-blue">Hold</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-block">
+                <h6>Copyright 2021 @ <a href="https://goa247.com/">Goa247.com</a> | All Rights Reserved</h6>
+            </div>
+        </div>
+    </section>
+    <!-- Main Wrapper -->
+
+    <div class="modal fade filter-modal custom-filter-modal" id="filterModal" tabindex="-1" role="dialog"
+        aria-labelledby="filterModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="filterModalLabel">Filter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="assets/images/close.png" class="img-fluid" />
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <h4 class="custom-heading">Filter by Status</h4>
+                        <div class="form-group select-group">
+                            <div class="select-wrapper">
+                                <select class="form-control">
+                                    <option>VIP</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group radio-group fullwidth-radio-group">
+                            <label class="radio-label">Filter by Balance
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="input-group custom-input-group">
+                                <div class="input-subgroup">
+                                    <label>Min amount</label>
+                                    <input type="number" class="form-control" placeholder="00" />
+                                </div>
+                                <div class="input-subgroup">
+                                    <label>Max amount</label>
+                                    <input type="number" class="form-control" placeholder="2000" />
+                                </div>
+                            </div>
+                            <label class="radio-label">Filter by Last Login
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="input-group fullwidth-input-group">
+                                <div class="input-subgroup">
+                                    <label>Date</label>
+                                    <div class="form-group datepicker-group">
+                                        <input type="text" class="form-control modal-datepicker"
+                                            placeholder="Date Range" name="date" readonly>
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group button-group">
+                            <button type="reset" class="btn-border-blue">Clear All</button>
+                            <button type="submit" class="btn-green">Apply Filter</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade filter-modal custom-filter-modal approve-request-modal" id="approveModal" tabindex="-1" role="dialog"
+        aria-labelledby="approveModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="approveModalLabel">Approve Request</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="assets/images/close.png" class="img-fluid" />
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Comments</label>
+                                    <input type="text" class="form-control" placeholder="00" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="checked-amount">
+                                    <label for="checked-amount">I have checked amount received by us</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn-green">Approve</button>
+                            </div>
+                            <div class="col-md-12">
+                                <h4>NO DUPLICATE UTR FOUND</h4>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade filter-modal custom-filter-modal reject-request-modal" id="rejectModal" tabindex="-1"
+        role="dialog" aria-labelledby="rejectModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rejectModalLabel">Reject Request</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="assets/images/close.png" class="img-fluid" />
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Comments</label>
+                                    <input type="text" class="form-control" placeholder="00" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn-red">Reject</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/dataTables.responsive.min.js"></script>
+    <script src="assets/js/responsive.bootstrap4.min.js"></script>
+    <script src="assets/js/dataTables.buttons.min.js"></script>
+    <script src="assets/js/jszip.min.js"></script>
+    <script src="assets/js/pdfmake.min.js"></script>
+    <script src="assets/js/vfs_fonts.js"></script>
+    <script src="assets/js/buttons.html5.min.js"></script>
+    <script src="assets/js/buttons.print.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
