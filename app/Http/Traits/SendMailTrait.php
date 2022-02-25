@@ -12,7 +12,7 @@ trait SendMailTrait {
                 $m->from( env('MAIL_USERNAME') , env('APP_NAME') );
                 $m->to( env('CONTACT_US_EMAIL'), env('CONTACT_US_NAME'))->subject($messagedata['subject']);
             }); 
-            return response()->json(['status' => true]);
+            return response()->json([' ' => true]);
     	}catch(\Exception $e){
     		return response()->json(['status' => false]);
     	}
