@@ -1,6 +1,14 @@
+@php
+   $prefix = trim(Request::route()->getPrefix(), '/');
+   $route = Route::current()->getName();
+   if ($prefix == 'operations/manager') {
+        $prefix = 'om';
+   }
+@endphp
+
 <div class="sidebar">
     <div class="logo-block">
-        <a class="navbar-logo" href="{{ url('dashboard') }}">
+        <a class="navbar-logo" href="{{ url($prefix.'.dashboard') }}">
             <img src="{{ asset('img/logo.svg') }}" class="img-fluid" />
             <span>Your Business tagline goes here</span>
         </a>
@@ -11,57 +19,63 @@
     <div class="menu-block">
         <ul>
             <li>
-                <a href="{{ route('dashboard') }}" class="active">
+                <a href="{{ route($prefix.'.dashboard') }}" class="active">
                     <img src="{{ asset('img/icon1.png')}}" class="img-fluid default" />
                     <img src="{{ asset('img/icon1-active.png')}}" class="img-fluid active" />
                     <span>Dashboard</span>
                 </a>
             </li>
-           @if(Auth::user()->role->id == 3)
+           @if(in_array(Auth::user()->role->id, [3,4]))
               <li>
-                <a href="{{ route('tasks') }}">
+                <a href="javascript:void(0);">
                     <img src="{{ asset('img/icon1.png') }}" class="img-fluid default" />
                     <img src="{{ asset('img/icon1-active.png') }}" class="img-fluid active" />
                     <span>Tasks</span>
                 </a>
+                <ul class="submenu">
+                        <li><a href="{{ route($prefix.'.players-tasks') }}">Players</a></li>
+                        <li><a href="{{ route($prefix.'.sales-tasks') }}">sales</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="{{ route('players') }}">
+                    <a href="{{ route($prefix.'.players') }}">
                         <img src="{{ asset('img/icon3.png')}}" class="img-fluid default" />
                         <img src="{{ asset('img/icon3-active.png')}}" class="img-fluid active" />
                         <span>Players</span>
                     </a>
                 </li>
+                 @if(in_array(Auth::user()->role->id, [3]))
                 <li>
-                    <a href="{{ route('agents') }}">
+                    <a href="{{ route($prefix.'.agents') }}">
                         <img src="{{ asset('img/icon2.png')}}" class="img-fluid default" />
                         <img src="{{ asset('img/icon2-active.png')}}" class="img-fluid active" />
                         <span>Agents</span>
                     </a>
                 </li>
                    <li>
-                    <a href="{{ route('associates') }}">
+                    <a href="{{ route($prefix.'.associates') }}">
                         <img src="{{ asset('img/icon2.png')}}" class="img-fluid default" />
                         <img src="{{ asset('img/icon2-active.png')}}" class="img-fluid active" />
                         <span>Associates</span>
                     </a>
                 </li>
+                @endif
                 <li>
-                    <a href="{{ route('transcations') }}">
+                    <a href="{{ route($prefix.'.transcations') }}">
                         <img src="{{ asset('img/icon6.png') }}" class="img-fluid default" />
                         <img src="{{ asset('img/icon6-active.png') }}" class="img-fluid active" />
                         <span>Transcations</span>
                     </a>
                 </li>
               <li>
-                    <a href="{{ route('reports') }}">
+                    <a href="javascript:void(0);">
                         <img src="{{ asset('img/icon6.png') }}" class="img-fluid default" />
                         <img src="{{ asset('img/icon6-active.png') }}" class="img-fluid active" />
                         <span>Reports</span>
                     </a>
-                    <ul class="submenu d-none">
-                        <li><a href="javascript:void(0);" class="active">Revenue per agent</a></li>
-                        <li><a href="javascript:void(0);">Revenue per player</a></li>
+                    <ul class="submenu">
+                        <li><a href="{{ route($prefix.'.agents-reports')}}">Revenue per agent</a></li>
+                        <li><a href="{{ route($prefix.'.players-reports')}}">Revenue per player</a></li>
                     </ul>
                 </li>
             @endif
@@ -83,7 +97,7 @@
 
             </li>
             <li>
-                <a href="{{ route('role')}}">
+                <a href="{{ route($prefix.'.role')}}">
                     <img src="{{ asset('img/icon5.png')}}" class="img-fluid default" />
                     <img src="{{ asset('img/icon5-active.png')}}" class="img-fluid active" />
                     <span>Roles</span>
@@ -91,7 +105,7 @@
 
             </li>
             <li>
-                <a href="{{ route('create_user')}}">
+                <a href="{{ route($prefix.'.create_user')}}">
                     <img src="{{ asset('img/icon2.png')}}" class="img-fluid default" />
                     <img src="{{ asset('img/icon2-active.png')}}" class="img-fluid active" />
                     <span>Create User</span>

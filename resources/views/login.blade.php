@@ -70,6 +70,9 @@
         <h6>Copyright 2021 @ <a href="javascript:void(0);">Goa247.com</a> | All Rights Reserved</h6>
     </div>
 </footer>
-<script src="{{ mix('js/admin-index.js') }}"></script>
+<script src="{{ url('js/jquery.min.js') }}"></script>
+<script src="{{ url('js/jquery.validate.js') }}"></script>
+<script src="{{ url('js/bootstrap.min.js') }}"></script>
+<script src="{{ url('js/custom/custom-login.js') }}"></script>
 </body>
 </html>

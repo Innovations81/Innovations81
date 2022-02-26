@@ -19,14 +19,10 @@ class AuthController extends Controller
 
     protected $redirectTo;
 
-    public function index()
-    {
-        //
-    }
-
     public function adminlogin(Request $request)
     {
-        if($request->method() == 'POST'){
+        if ($request->method() == 'POST'){
+
             $request->validate([
                 'email' => 'required',
                 'password' => 'required',
@@ -35,28 +31,34 @@ class AuthController extends Controller
             $credentials = $request->only('email', 'password');
             $user = User::where('email', $credentials['email'])->first();
 
-            if($user != null){
+            if($user !== null){
                 if (Auth::attempt($credentials)) {
                     Session::flash('success', 'Login Successfully');
-                    return redirect($this->redirectTo().'/dashboard');
-                }else{
 
+                    return redirect($this->redirectTo().'/dashboard');
+                } else{
                     Session::flash('error', 'You have entered invalid credentials');
+
                     return redirect()->back()->withInput();
                 }
-            }else{
+            } else{
+                Session::flash('error', 'You have entered invalid credentials');
 
-                Session::flash('error', 'User Not Found');
                 return redirect()->back()->withInput();
             }
         }
-        return view('login');
+
+        if (Auth::check()){
+            return redirect($this->redirectTo().'/dashboard');
+        } else {
+            return view('login');
+        }
     }
 
     public function redirectTo()
     {
-
-        switch(Auth::user()->role->id){
+        switch(Auth::user()->role->id)
+        {
             case 1:
                 $this->redirectTo = '/admin';
                 return $this->redirectTo;
@@ -67,6 +69,26 @@ class AuthController extends Controller
                 break;
             case 3:
                 $this->redirectTo = '/operations/manager';
+                return $this->redirectTo;
+                break;
+            case 4:
+                $this->redirectTo = '/associate';
+                return $this->redirectTo;
+                break;
+            case 5:
+                $this->redirectTo = '/agent';
+                return $this->redirectTo;
+                break;
+            case 6:
+                $this->redirectTo = '/finance/manager';
+                return $this->redirectTo;
+                break;
+            case 7:
+                $this->redirectTo = '/deposit/manager';
+                return $this->redirectTo;
+                break;
+            case 8:
+                $this->redirectTo = '/withdraw/manager';
                 return $this->redirectTo;
                 break;
             default:

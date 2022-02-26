@@ -34,10 +34,29 @@
   @include('partials.footer')
   </div>
 </section>
-<script src="{{ mix('js/admin-index.js') }}"></script>
+<script src="{{ url('js/jquery.min.js') }}"></script>
+<script src="{{ url('js/jquery.validate.js') }}"></script>
+<script src="{{ url('js/popper.min.js') }}"></script>
+<script src="{{ url('js/bootstrap.min.js') }}"></script>
+
+<script src="{{ url('js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ url('js/dataTables.bootstrap4.min.js') }}"></script>
+<script src="{{ url('js/dataTables.responsive.min.js') }}"></script>
+<script src="{{ url('js/responsive.bootstrap4.min.js') }}"></script>
+<script src="{{ url('js/dataTables.buttons.min.js') }}"></script>
+<script src="{{ url('js/jszip.min.js') }}"></script>
+<script src="{{ url('js/pdfmake.min.js') }}"></script>
+<script src="{{ url('js/vfs_fonts.js') }}"></script>
+<script src="{{ url('js/buttons.html5.min.js') }}"></script>
+<script src="{{ url('js/buttons.print.min.js') }}"></script>
+<script src="{{ url('js/bootstrap-datepicker.js') }}"></script>
+<script src="{{ url('js/custom/custom.js') }}"></script>
+<script src="{{ url('js/custom/admin-custom.js') }}"></script>
+<script src="{{ url('js/custom/admin-addplayers.js') }}"></script>
 <script type="text/javascript">
     var url= '{{  url('') }}';
     var csrf_token= '{{ csrf_token() }}';
 </script>
+@yield('js_after')
 </body>
 </html>

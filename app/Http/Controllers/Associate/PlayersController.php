@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\OperationManager;
+namespace App\Http\Controllers\Associate;
 
 use App\Models\Players;
 use App\Models\User;
@@ -19,7 +19,7 @@ class PlayersController extends Controller
     {
         $players = User::where('role_id','2')->get();
 
-        return view('operationManager.players',compact(['players']));
+        return view('associate.om-players',compact(['players']));
 
     }
 
@@ -60,7 +60,7 @@ class PlayersController extends Controller
         $user->phone = $request->input('phone');
         $user->save();
 
-        return redirect()->route('om.players')->with('success', 'Player Added Successfully');
+        return redirect()->route('associate.players')->with('success', 'Player Added Successfully');
     }
 
     /**
@@ -71,7 +71,7 @@ class PlayersController extends Controller
      */
     public function show($id)
     {
-        return view('operationManager.players-details', []);
+        return view('associate.players-details', []);
     }
 
     /**

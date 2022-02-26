@@ -19,6 +19,11 @@ class ReportsController extends Controller
 
     public function index()
     {
-        return view('operationManager.reports', []);
+        return view('operationManager.agents-reports', []);
+    }
+
+    public function playersReport()
+    {
+        return view('operationManager.players-reports', []);
     }
 }

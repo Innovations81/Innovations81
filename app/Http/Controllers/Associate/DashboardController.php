@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\OperationManager;
+namespace App\Http\Controllers\Associate;
 
 use Illuminate\Routing\Controller;
 
-class TasksController extends Controller
+class DashboardController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,11 +19,6 @@ class TasksController extends Controller
 
     public function index()
     {
-        return view('operationManager.players-tasks', []);
-    }
-
-    public function salesTask()
-    {
-        return view('operationManager.sales-tasks', []);
+        return view('associate.dashboard', []);
     }
 }

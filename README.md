@@ -19,4 +19,4 @@ For database install import sql file from database folder
 
 
 Theme html can be found inside html folder
-this is my local host file
+http://127.0.0.1:8000/
